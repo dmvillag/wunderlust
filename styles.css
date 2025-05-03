@@ -1,0 +1,407 @@
+/* Dulce M. Villagomez Perez */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* === FONT IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === COLORS === */
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3 {
+    font-family: 'Molle', cursive;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0 1em;
+}
+
+h2 {
+    font-size: 4.25rem;
+    margin: 0.5em;
+}
+
+h3 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5em;
+}
+
+h4, p, q, a, small, nav, button, form, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--teal);
+}
+
+/* === LAYOUT STYLES === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section {
+    padding: 4em 1em;
+}
+
+.section-light {
+    background-color: var(--light-gray);
+}
+
+.section-dark {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+/* === HEADER === */
+header {
+    background-color: var(--teal);
+}
+
+header p {
+    font-size: 3rem;
+    margin: 0 2em 1em;
+}
+
+
+/* === NAVIGATION === */
+nav {
+    background-color: var(--dark-gray);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav label {
+    display: block;
+    width: 100%;
+    padding: 0.50rem;
+    text-align: center;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+nav ul {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* === INTRO ===*/
+  #intro p {
+    font-size: 2rem;
+    margin: 1em 1em;
+  }
+
+  #intro img {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  
+  /* === MENU LINKS === */
+  nav ul li {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: var(--blue);
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--yellow);
+  }
+
+/* === PLAN SECTION === */
+#plan {
+    background-color: var(--yellow);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#plan h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+#plan h4 {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+#plan section {
+    background-color: var(--teal);
+    border: 5px solid white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 800px;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+/* === TESTIMONIALS === */
+#testimonials {
+    background-color: var(--white);
+    padding: 1em 1.5em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonials h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#testimonials section {
+    padding: 1.5rem;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#testimonials section img {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+#testimonials section h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#testimonials section p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#testimonials section q {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#testimonials q {
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+/* === ABOUT === */
+#about {
+    background-color: var(--blue);
+    padding: 1em 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#about h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 2rem;
+}
+
+#about section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#about section section {
+    flex: 1 1 45%;
+    max-width: 45%;
+    box-sizing: border-box;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* === CONTACT US === */
+form {
+    background-color: var(--white);
+    padding: 2em;
+    font-size: 3rem;
+}
+
+form .required {
+    color: var(--purple);
+}
+
+#contact h3 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+#contact span {
+    font-style: italic;
+    font-size: 3rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 2px solid var(--purple);
+}
+
+#contact fieldset {
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+form #mySubmit {
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: var(--light-gray);
+    color: var(--black);
+    text-align: center;
+    padding: 2em 3em;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+
+/* === MEDIUM DEVICES === */
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* === LARGE DEVICES === */
+@media (min-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
